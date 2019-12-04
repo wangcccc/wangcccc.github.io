@@ -1,4 +1,8 @@
 # wangcccc.github.io
+
+<script async src="https://cse.google.com/cse.js?cx=005238511222894610186:djf7mpjoup1"></script>
+<div class="gcse-search"></div>
+
 [testlink](a/a.md)
 ## Two sum
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
