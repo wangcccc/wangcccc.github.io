@@ -1,3 +1,9 @@
+<div id="title">
+    <h1>{{ Bit manipulation }}</h1>
+    <p></p>
+    <hr>
+</div>
+
 # Common operations
 > Set the nth bit
 
