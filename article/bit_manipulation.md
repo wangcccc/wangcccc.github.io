@@ -1,6 +1,6 @@
----
-title: Bit manipulation
----
+{% assign title = "Bit manipulation" %}
+
+#test
 
 # Common operations
 
