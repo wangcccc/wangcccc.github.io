@@ -48,3 +48,13 @@ bool isPowerOfTwo(int n) {
     return n > 0 && (n & n - 1) == 0;
 }
 ```
+
+### 2. Power of Four
+Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
+```c++
+bool isPowerOfFour(int num) {
+    if (num <= 0) return false;
+    if (num & num - 1) return false;
+    return (num & 0x55555555) == num;
+}
+```
