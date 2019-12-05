@@ -1,8 +1,6 @@
-<div id="title">
-    <h1>Bit manipulation</h1>
-    <p></p>
-    <hr>
-</div>
+---
+title: Bit manipulation
+---
 
 # Common operations
 > Set the nth bit
