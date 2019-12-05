@@ -7,17 +7,40 @@ title: Bit manipulation
 > Set the nth bit
 
 ```c++
-x |= 1 << n;
+y = x | (1 << n);
 ```
 
 > Unset the nth bit
 
 ```c++
-x &= ~(1 << n);
+y = x & ~(1 << n);
 ```
 
 > Toggle the nth bit
 
 ```c++
-x ^= 1 << n;
+y = x ^ (1 << n);
+```
+
+> Turn off the rightmost 1-bit
+
+```c++
+y = x & (x - 1);
+```
+
+> Turn on the rightmost 0-bit
+
+```c++
+y = x | (x + 1);
+
+> Isolate the rightmost 1-bit
+
+```c++
+y = x & -x;
+```
+
+> Isolate the rightmost 0-bit
+
+```c++
+y = ~x & (x + 1);
 ```
