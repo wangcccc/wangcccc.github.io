@@ -55,7 +55,7 @@ Given an integer (signed 32 bits), write a function to check whether it is a pow
 bool isPowerOfFour(int num) {
     if (num <= 0) return false;
     if (num & num - 1) return false;
-    return num & 0x55555555 == num;
+    return (num & 0x55555555) == num;
 }
 ```
 
