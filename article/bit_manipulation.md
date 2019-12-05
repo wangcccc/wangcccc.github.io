@@ -49,7 +49,7 @@ y = ~x & (x + 1);
 # Problems
 
 > ### Power of Two
-> Given an integer, write a function to determine if it is a power of two.
+Given an integer, write a function to determine if it is a power of two.
 
 ```c++
 bool isPowerOfTwo(int n) {
