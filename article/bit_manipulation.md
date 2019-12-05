@@ -58,3 +58,17 @@ bool isPowerOfFour(int num) {
     return (num & 0x55555555) == num;
 }
 ```
+
+### 3. Lowercase & Uppercase
+Implement function toLowerCase(), toUpperCase() and toggleCase().
+```c++
+char toLowerCase(char c) {
+    return c |= 32;
+}
+char toUpperCase(char c) {
+    return c &= -33;
+}
+char toggleCase(char c) {
+    return c ^= 32;
+}
+```
