@@ -1,5 +1,5 @@
 <div id="title">
-    <h1>{{ Bit manipulation }}</h1>
+    <h1>Bit manipulation</h1>
     <p></p>
     <hr>
 </div>
