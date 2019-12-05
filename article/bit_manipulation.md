@@ -4,7 +4,7 @@ title: Bit manipulation
 
 # Common operations
 
-Set the nth bit
+> Set the nth bit
 
 ```c++
 x |= 1 << n;
@@ -14,4 +14,10 @@ x |= 1 << n;
 
 ```c++
 x &= ~(1 << n);
+```
+
+> Toggle the nth bit
+
+```c++
+x ^= 1 << n;
 ```
