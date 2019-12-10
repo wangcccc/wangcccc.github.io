@@ -2,16 +2,3 @@
 ---
 
 @import "{{ site.theme }}";
-
-.wrapper {
-    max-width: 1000px;
-}
-
-section {
-    max-width: 1000px;
-    margin-top: 0;
-}
-
-section #title {
-    margin: 0;
-}
