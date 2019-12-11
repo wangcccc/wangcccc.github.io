@@ -4,7 +4,7 @@ title: How to install & config Ubuntu server on VirtualBox
 
 # Install
 1. Create a new virtual machine.
-2. In Settings > Storage > Controller: IDE > Empty, select the iso file for Ubuntu server.
+2. In Settings > Storage > Controller: IDE > Empty, select the iso file of Ubuntu server.
 3. Start the VM and follow the guide to install.
     * Select the proper mirror server or the download speed will be too slow. (e.g., http://mirrors.aliyun.com/ubuntu/)
 4. Install the updates if you like or just reboot to finish.
