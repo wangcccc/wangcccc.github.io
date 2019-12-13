@@ -10,6 +10,13 @@ title: How to install & config Ubuntu server on VirtualBox
 4. Install the updates if you like or just reboot to finish.
 
 # Config
+### How to change timezone?
+
+    # list zoneinfos
+    ls /usr/share/zoneinfo
+    # link the localtime to the timezone you want to set
+    sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 ### How to change the terminal resolution?
 1. Add the following three settings to `/etc/default/grub`:
 
