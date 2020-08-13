@@ -6,8 +6,8 @@ title: How to install & config Ubuntu server on VirtualBox
 1. Create a new virtual machine.
 2. In Settings > Storage > Controller: IDE > Empty, select the iso file of Ubuntu server.
 3. Start the VM and follow the guide to install.
-    * Select the proper mirror server or the download speed will be too slow. (e.g., http://mirrors.aliyun.com/ubuntu/)
-4. Install the updates if you like or just reboot to finish.
+    * Select the proper mirror server to speed up download speed. (e.g., *http://mirrors.aliyun.com/ubuntu/*)
+4. Install the updates or just reboot to finish.
 
 # Config
 ### How to change timezone?
@@ -33,6 +33,12 @@ title: How to install & config Ubuntu server on VirtualBox
 Run the following command and then follow the configuration guide.
 
     sudo dpkg-reconfigure console-setup
+
+### How to change apt mirror?
+
+Apt mirror is configed in */etc/apt/sources.list*
+
+    sudo sed -i 's/http:\/\/us.archive.ubuntu.com\/ubuntu\//http:\/\/mirrors.aliyun.com\/ubuntu\//' /etc/apt/sources.list
 
 ### How to install updates?
 
