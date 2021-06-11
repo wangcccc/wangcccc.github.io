@@ -22,12 +22,12 @@ DOWNLOADER_MIDDLEWARES = {
 }
 ```
  Set the environment variable http_proxy, https_proxy.
- ```bash
-C:\>set http_proxy=http://proxy:port
-csh% setenv http_proxy http://proxy:port
-sh$ export http_proxy=http://proxy:port
 
-C:\>set https_proxy=https://proxy:port
-csh% setenv https_proxy https://proxy:port
-sh$ export https_proxy=https://proxy:port
-```
+    C:\>set http_proxy=http://proxy:port
+    csh% setenv http_proxy http://proxy:port
+    sh$ export http_proxy=http://proxy:port
+
+    C:\>set https_proxy=https://proxy:port
+    csh% setenv https_proxy https://proxy:port
+    sh$ export https_proxy=https://proxy:port
+
