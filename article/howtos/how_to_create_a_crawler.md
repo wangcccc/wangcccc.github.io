@@ -21,7 +21,7 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 1
 }
 ```
- Set the environment variable http_proxy, https_proxy
+ Set the environment variable http_proxy, https_proxy.
  ```bash
 C:\>set http_proxy=http://proxy:port
 csh% setenv http_proxy http://proxy:port
