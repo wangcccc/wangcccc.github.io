@@ -31,3 +31,24 @@ DOWNLOADER_MIDDLEWARES = {
     csh% setenv https_proxy https://proxy:port
     sh$ export https_proxy=https://proxy:port
 
+# pymongo
+```python
+from pymongo import MongoClient
+
+client = MongoClient('localhost', 27017)
+db = client.db_name
+collection = db.collection_name
+
+# insert
+collection.insert_one(data)
+# get total documents
+count = collection.count_documents({})
+# search by pattern
+query = {
+    "field_name": {
+    "$regex": '^pattern.*',
+    "$options" :'i' # case-insensitive
+    }
+}
+docs = collection.find(query)
+```
