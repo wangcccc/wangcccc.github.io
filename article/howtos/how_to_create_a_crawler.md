@@ -30,6 +30,10 @@ DOWNLOADER_MIDDLEWARES = {
     C:\>set https_proxy=https://proxy:port
     csh% setenv https_proxy https://proxy:port
     sh$ export https_proxy=https://proxy:port
+    
+# mongodb
+
+    db.pornpics.updateMany({}, {$set:{favorite:false}})
 
 # pymongo
 ```python
