@@ -10,3 +10,5 @@ title: A Coder's Journal
 [Bit manipulation](article/algo/bit_manipulation.md)
 # Linux
 [Linux commands & tools](article/linux_commands_and_tools.md)
+# Programming language
+[Python](article/pl/python.md)
