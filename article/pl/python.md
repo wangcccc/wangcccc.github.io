@@ -33,7 +33,7 @@ removesuffix(suffix, /)
 
 replace(old, new[, count])
 
-join(iterable)                      # the separator between elements is the string providing this method
+join(iterable)                      # sperator is the caller string
 expandtabs(tabsize=8)               # convert tabs to spaces
 
 format(*args, **kwargs)
