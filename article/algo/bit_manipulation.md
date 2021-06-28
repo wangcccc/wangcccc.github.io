@@ -1,10 +1,7 @@
----
-title: Bit manipulation
----
-
 # Common operations
 
-### 1. Set the nth bit
+## 1. Set the nth bit
+
 ```c++
 y = x | (1 << n);
 ```
