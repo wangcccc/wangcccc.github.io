@@ -1,9 +1,9 @@
----
-title: Python
----
+# Python
 
-### String
+## String
+
 **Strings are imuutable. None of these methods change the original string.**
+
 ```python
 capitalize()                        # capitalize first character and lowercase the rest
 title()                             # uppercase first character in words
@@ -55,7 +55,8 @@ isspace()
 istitle()
 ```
 
-### List
+## List
+
 ```python
 colors = ['red', 'green', 'blue']
 
@@ -88,7 +89,9 @@ nums[2:]
 nums[-3:]
 copy_nums = nums[:]
 ```
-### Dictionary
+
+## Dictionary
+
 ```python
 worker = {'name': 'wang', 'age': 18}
 worker['salary'] = 5000
@@ -104,17 +107,22 @@ for k, v in worker.items():
 sorted(worker.keys())
 set(worker.values())
 ```
-### IO & file
+
+## IO & file
+
 ```python
 # get user input
 age = input('How old are you?')
 age = int(age)
 ```
-**file open mode**
+
+file open mode:
+
 * r, read mode
 * w, write mode
 * a, append mode
 * r+, read write mode
+
 ```python
 # read all
 with open('data.csv') as data_file:
@@ -135,7 +143,9 @@ for line in lines:
 with open('data.csv', 'w') as data_file:
     data_file.write('zhao, 18, 1000\n')
 ```
-### Function & moudle
+
+## Function & moudle
+
 ```python
 # accept a variable number of arguments as tuple
 def print_names(*names):

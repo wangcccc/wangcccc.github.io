@@ -27,11 +27,13 @@ y = x & (x - 1);
 ```
 
 ### 5. Turn on the rightmost 0-bit
+
 ```c++
 y = x | (x + 1);
 ```
 
 ### 6. Isolate the rightmost 1-bit
+
 ```c++
 y = x & -x;
 ```

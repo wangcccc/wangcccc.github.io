@@ -1,15 +1,15 @@
----
-title: How to install & config Ubuntu server on VirtualBox
----
+# How to install & config Ubuntu server on VirtualBox
 
-# Install
+## Install
+
 1. Create a new virtual machine.
 2. In Settings > Storage > Controller: IDE > Empty, select the iso file of Ubuntu server.
 3. Start the VM and follow the guide to install.
-    * Select the proper mirror server to speed up download speed. (e.g., *http://mirrors.aliyun.com/ubuntu/*)
+    * Select the proper mirror server to speed up download speed. (e.g., *<http://mirrors.aliyun.com/ubuntu/>*)
 4. Install the updates or just reboot to finish.
 
-# Config
+## Config
+
 ### How to change timezone?
 
     # list zoneinfos
@@ -18,6 +18,7 @@ title: How to install & config Ubuntu server on VirtualBox
     sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 ### How to change the terminal resolution?
+
 1. Add the following three settings to `/etc/default/grub`:
 
         GRUB_GFXMODE=1280x1024
@@ -30,6 +31,7 @@ title: How to install & config Ubuntu server on VirtualBox
         sudo reboot
 
 ### How to change the font and font size?
+
 Run the following command and then follow the configuration guide.
 
     sudo dpkg-reconfigure console-setup
@@ -48,6 +50,7 @@ Apt mirror is configed in */etc/apt/sources.list*
     sudo apt autoremove    # Removes any old packages that are no longer needed
 
 ### How to enable shared clipboard?
+
 For a GUI-less server the shared clipboard functionality of Virtual Box **can not work**. A text-based server does not have a clipboard.
 
 We may still want to install guest additions in an Ubuntu server for the following features they provide:
@@ -62,7 +65,7 @@ We may still want to install guest additions in an Ubuntu server for the followi
     sudo apt-get install virtualbox-guest-additions-iso
 
 ### How to enable shared folders?
+
 1. Make sure that Guest Additions are properly installed.
 2. In Settings > Shared Folders > Machine Folders, create and config a new shared folder.
 3. Start the VM, the shared folder shall be auto mounted to `/media/sf_{SharedFolderName}`
-

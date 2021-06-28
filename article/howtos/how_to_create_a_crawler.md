@@ -1,8 +1,9 @@
----
-title: How to create a crawler?
----
+# How to create a crawler?
+
+## proxy
 
 ### How to use proxy in python requests?
+
 ```python
 import requests
 
@@ -15,27 +16,35 @@ print(response.text)
 ```
 
 ### How to set up proxy in Scrapy?
+
 In settings.py add middleware config.
+
 ```python
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 1
 }
 ```
+
  Set the environment variable http_proxy, https_proxy.
 
-    C:\>set http_proxy=http://proxy:port
-    csh% setenv http_proxy http://proxy:port
-    sh$ export http_proxy=http://proxy:port
+```shell
+C:\>set http_proxy=http://proxy:port
+csh% setenv http_proxy http://proxy:port
+sh$ export http_proxy=http://proxy:port
 
-    C:\>set https_proxy=https://proxy:port
-    csh% setenv https_proxy https://proxy:port
-    sh$ export https_proxy=https://proxy:port
-    
-# mongodb
+C:\>set https_proxy=https://proxy:port
+csh% setenv https_proxy https://proxy:port
+sh$ export https_proxy=https://proxy:port
+```
 
-    db.pornpics.updateMany({}, {$set:{favorite:false}})
+## mongodb
 
-# pymongo
+```mongodb
+db.pornpics.updateMany({}, {$set:{favorite:false}})
+```
+
+## pymongo
+
 ```python
 from pymongo import MongoClient
 
