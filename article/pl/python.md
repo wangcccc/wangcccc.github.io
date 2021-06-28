@@ -78,7 +78,7 @@ colors.reverse()            # reverse in-place
 
 len(colors)
 
-nums = list(range(1, 6))           # make a list
+nums = list(range(1, 6))    # make a list
 min(nums)
 max(nums)
 sum(nums)
@@ -104,15 +104,38 @@ for k, v in worker.items():
 sorted(worker.keys())
 set(worker.values())
 ```
-### IO
+### IO & file
 ```python
 # get user input
 age = input('How old are you?')
 age = int(age)
-
-
 ```
-### Function
+**file open mode**
+* r, read mode
+* w, write mode
+* a, append mode
+* r+, read write mode
+```python
+# read all
+with open('data.csv') as data_file:
+    data = data_file.read()
+
+# read by line
+with open('data.csv') as data_file:
+    for line in data_file:
+        print(line.rstrip())
+
+# read all lines
+with open('data.csv') as data_file:
+    liens = data_file.readlines()
+for line in lines:
+    print(line.rstrip())
+
+# write file
+with open('data.csv', 'w') as data_file:
+    data_file.write('zhao, 18, 1000\n')
+```
+### Function & moudle
 ```python
 # accept a variable number of arguments as tuple
 def print_names(*names):
@@ -121,6 +144,21 @@ print_names('zhao')
 print_names('zhao', 'qian', 'sun', 'li')
 
 # accept a variable number of arguments as dictionary
+def build_profile(name, age, **other_info):
+    profile = {}
+    profile['name'] = name
+    profile['age'] = age
+    for key, value in other_info():
+        profile[key] = value
+    return profile
+
 def f(positional_argument, /, positional_or_keyword_argument, *, keyword_argument):
     pass
+    
+# import function from module
+from module_name import function_name
+from module_name import function_0, function_1
+from module_name import *
+from module_name import function_name as my_func
+import module_name as my_module
 ```
