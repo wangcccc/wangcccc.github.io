@@ -6,8 +6,10 @@
 
 Probably don't have the full verison of vim installed.
 
-    readlink -f `which vi`
-    sudo apt install vim
+```shell
+readlink -f `which vi`
+sudo apt install vim
+```
 
 ### vim plugins
 
@@ -15,15 +17,35 @@ Probably don't have the full verison of vim installed.
 
 Install powerline fonts
 
-    sudo apt install fonts-powerline
+```shell
+sudo apt install fonts-powerline
+```
 
 ## git
 
 ### Show all files in a commit
 
-    git diff-tree --no-commit-id --name-only -r 64606fcb
+```shell
+git diff-tree --no-commit-id --name-only -r 64606fcb
+```
 
 ### Change file and directory permissions
 
-    find . -type f -perm 777 -exec chmod 644 {} \;
-    find . -type d -perm 777 -exec chmod 755 {} \;
+```shell
+find . -type f -perm 777 -exec chmod 644 {} \;
+find . -type d -perm 777 -exec chmod 755 {} \;
+```
+
+### Ignore file by setting git exclude
+
+Add ignorance rules to `.git/info/exclude`
+
+## Shadowsocks
+
+### config on Debian and Ubuntu
+
+```shell
+wget https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev-debian.sh
+chmod +x shadowsocks-libev-debian.sh
+./shadowsocks-libev-debian.sh
+```
