@@ -1,8 +1,23 @@
 # Linux commands & tools
 
-## vim
+## Bash
 
-### P: Sorry, the command is not available in this version...
+### Extract filename and extension in bash
+
+```shell
+filename_ext=img.jpg
+extension=${filename##*.}
+filename=${filename%.*}
+# rename all *.jpg to *.png
+for file in *.jpg
+do
+    mv "$file" "${file%.jpg}.png"
+done
+```
+
+## Vim
+
+### Problem: Sorry, the command is not available in this version
 
 Probably don't have the full verison of vim installed.
 
@@ -21,7 +36,7 @@ Install powerline fonts
 sudo apt install fonts-powerline
 ```
 
-## git
+## Git
 
 ### Show all files in a commit
 
@@ -36,7 +51,7 @@ find . -type f -perm 777 -exec chmod 644 {} \;
 find . -type d -perm 777 -exec chmod 755 {} \;
 ```
 
-### Ignore file by setting git exclude
+### Add ignorance rules without adding .gitignore
 
 Add ignorance rules to `.git/info/exclude`
 
